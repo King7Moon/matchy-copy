@@ -11,20 +11,47 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+// create animal variable
+var animal = {};
+//dot notation adding species with a value
+animal.species = "canine";
 
+// bracket notation
+animal["name"] = "dog";
+
+// giving my animal var an empty array called noises
+animal["noises"] = [];
+
+console.log(animal);
 
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+var noises = [];
+// noises assigned to empty array
 
+// give noises first element using brackewt notation
+noises[0] = "bark";
+
+// add another noise element to the end
+noises.push("growl");
+
+// replace bark with howl
+noises.unshift("howl");
+
+// use bracket syntax again to add another noise
+noises[3] = "woof";
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+animal["noises"] = noises;
+
+animal.noises.push("roar");
 
 
 /* *******************************************************************
