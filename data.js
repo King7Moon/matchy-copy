@@ -58,9 +58,10 @@ animal.noises.push("roar");
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ * Objects can be accessed via bracket notation or dot notation.
+ * 
  * 2. What are the different ways of accessing elements on arrays?
- *
+ * Arrays are indexed lists unlike objects and can only be accessed through bracket notation. 
  * *******************************************************************
  */
 
@@ -77,11 +78,48 @@ animal.noises.push("roar");
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+// var named animals assigned to empty array
+
+var animals = [];
+//push animal into animals
+animals.push(animal);
+
+//create duck
+var duck = {
+  species: "duck",
+  name: "Jerome",
+  noises: ["quack", "honk", "sneeze", "woosh"]
+};
+//push duck to animals
+
+animals.push(duck);
+
+//create two more animals objects and add them to animals
+
+var cat = {
+  species: "feline",
+  name: "Tonya",
+  noises: ["meow", "hiss", "psst-psst", "roar"]
+}; 
+animals.push(cat);
+
+var goat = {
+  species: "capra hircus",
+  name: "Rachel",
+  noises: ["baah", "moo"]
+};
+animals.push(goat);
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
 
 
 
