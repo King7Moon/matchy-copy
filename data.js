@@ -115,8 +115,33 @@ animals.push(goat);
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*  Which data strcuture should you use for list of friends?
+I would use an array. We are just dealing with our animal's friends. 
+So i could just name the array "friends" and as assign it to an array of all their friends.
+I know you did not ask but if I wanted to use an object, that would really only be appropiate 
+if i needed to create keys. a list of followers is a numbered or indexed list which is why I chose
+an array. Now let's begin and see if my choice was right...
 
+\*
+**/
 
+// I: An array 
+// O: returns a random index of the input array
+// C: must use math.random()
+// E:
+
+var friends = [""];
+// declare friends array
+
+//declare function with animals as param
+function getRandom(animals){
+return Math.floor(Math.random() * animals.length);
+}
+//math.random generates a random number between 0 and 1. but we rounded it to a whole num with floor 
+
+var randomIndex = getRandom(animals);
+
+animals[0]["friends"] = friends;
 
 
 
